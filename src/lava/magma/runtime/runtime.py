@@ -31,11 +31,11 @@ from lava.magma.compiler.executable import Executable
 from lava.magma.compiler.node import NodeConfig
 from lava.magma.core.run_conditions import AbstractRunCondition
 
-"""Defines a Runtime which takes a lava executable and a pluggable message 
-passing infrastructure (for instance multiprocessing+shared memory or ray in 
-future), builds the components of the executable populated by the compiler 
-and starts the execution. Runtime is also responsible for auxiliary actions 
-such as pause, stop, wait (non-blocking run) etc. 
+"""Defines a Runtime which takes a lava executable and a pluggable message
+passing infrastructure (for instance multiprocessing+shared memory or ray in
+future), builds the components of the executable populated by the compiler
+and starts the execution. Runtime is also responsible for auxiliary actions
+such as pause, stop, wait (non-blocking run) etc.
 
 Overall Runtime Architecture:
                                                                     (c) InVar/
@@ -52,22 +52,22 @@ Overall Runtime Architecture:
 (c) - Channel
 (*) - Multiple
 
-Runtime coordinates with multiple RuntimeServices depending on how many got 
-created. The number of RuntimeServices is determined at compile time based 
-on the RunConfiguration supplied to the compiler. 
+Runtime coordinates with multiple RuntimeServices depending on how many got
+created. The number of RuntimeServices is determined at compile time based
+on the RunConfiguration supplied to the compiler.
 
-Each RuntimeService is assigned a group of process models it is supposed to 
-manage. Actions/Commands issued by the Runtime are relayed to the 
-RuntimeService using the runtime_to_service channel and the response are 
-returned back using the service_to_runtime channel. 
+Each RuntimeService is assigned a group of process models it is supposed to
+manage. Actions/Commands issued by the Runtime are relayed to the
+RuntimeService using the runtime_to_service channel and the response are
+returned back using the service_to_runtime channel.
 
-The RuntimeService further takes this forward for each process model in 
-similar fashion. A RuntimeService is connected to the process model it is 
-coordinating by two channels - service_to_process for sending 
-actions/commands to process model and process_to_service to get response back 
-from process model. 
+The RuntimeService further takes this forward for each process model in
+similar fashion. A RuntimeService is connected to the process model it is
+coordinating by two channels - service_to_process for sending
+actions/commands to process model and process_to_service to get response back
+from process model.
 
-Process Models communicate with each other via channels defined by 
+Process Models communicate with each other via channels defined by
 InVar/OutVar/RefVar ports.
 """
 

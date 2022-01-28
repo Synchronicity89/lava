@@ -36,10 +36,10 @@ Currently we envision few different kinds of RuntimeService:
     b. AsyncPyRuntimeService: Coordinates process models executing in 
        the CPU space and written in Python and following the AsyncProtocol.
 
-2. CRuntimeService: (Abstract Class) Coordinates/Manages process models 
+2. CRuntimeService: (Abstract Class) Coordinates/Manages process models
    executing in the CPU/Embedded space and written in C
    Following are the Concrete Implementations:
-    a. LoihiCRuntimeService: Coordinates process models executing in 
+    a. LoihiCRuntimeService: Coordinates process models executing in
        the CPU/Embedded space and written in C and following the LoihiProtocol.
 """
 

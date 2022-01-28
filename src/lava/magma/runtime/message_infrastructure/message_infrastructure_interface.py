@@ -12,9 +12,9 @@ from abc import ABC, abstractmethod
 from lava.magma.compiler.channels.interfaces import ChannelType, Channel
 from lava.magma.core.sync.domain import SyncDomain
 
-"""A Message Infrastructure Interface which can create actors which would 
-participate in message passing/exchange, start and stop them as well as 
-declare the underlying Channel Infrastructure Class to be used for message 
+"""A Message Infrastructure Interface which can create actors which would
+participate in message passing/exchange, start and stop them as well as
+declare the underlying Channel Infrastructure Class to be used for message
 passing implementation."""
 
 

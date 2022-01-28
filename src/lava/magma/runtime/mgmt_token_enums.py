@@ -4,7 +4,7 @@
 import typing as ty
 import numpy as np
 
-"""Defines message tokens for Actions (Commands) and Responses. Also defines 
+"""Defines message tokens for Actions (Commands) and Responses. Also defines
 helper functions to convert scalar values to these message tokens"""
 
 

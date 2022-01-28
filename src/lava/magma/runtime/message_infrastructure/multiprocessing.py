@@ -19,10 +19,10 @@ from lava.magma.runtime.message_infrastructure.message_infrastructure_interface\
     import MessageInfrastructureInterface
 
 
-"""Implements the Message Infrastructure Interface using Python 
-MultiProcessing Library. The MultiProcessing API is used to create actors 
-which will participate in exchanging messages. The Channel Infrastructure 
-further uses the SharedMemoryManager from MultiProcessing Library to 
+"""Implements the Message Infrastructure Interface using Python
+MultiProcessing Library. The MultiProcessing API is used to create actors
+which will participate in exchanging messages. The Channel Infrastructure
+further uses the SharedMemoryManager from MultiProcessing Library to
 implement the communication backend in this implementation."""
 
 

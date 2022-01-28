@@ -16,24 +16,24 @@ from lava.magma.runtime.mgmt_token_enums import (
     MGMT_COMMAND,
 )
 
-"""This file defines the interface for RuntimeService which is responsible for 
-coordinating the execution of a group of process models belonging to a common 
-synchronization domain. The domain might follow a SyncProtocol or could be 
-asynchronous too. The processes and their corresponding process models are 
-selected by the Runtime depending on the RunConfiguration assigned at the 
-start of execution. For each group of processes which follow the same 
+"""This file defines the interface for RuntimeService which is responsible for
+coordinating the execution of a group of process models belonging to a common
+synchronization domain. The domain might follow a SyncProtocol or could be
+asynchronous too. The processes and their corresponding process models are
+selected by the Runtime depending on the RunConfiguration assigned at the
+start of execution. For each group of processes which follow the same
 protocol and would execute on the same node, Runtime creates a RuntimeService
-which will coordinate all actions/commands from Runtime onto the processes as 
+which will coordinate all actions/commands from Runtime onto the processes as
 well as return any acknowledgement back to Runtime.
 
 Currently we envision few different kinds of RuntimeService:
 
-1. PyRuntimeService: (Abstract Class) Coordinates process models executing in 
+1. PyRuntimeService: (Abstract Class) Coordinates process models executing in
    the CPU space and written in Python.
    Following are the Concrete Implementations:
-    a. LoihiPyRuntimeService: Coordinates process models executing in 
+    a. LoihiPyRuntimeService: Coordinates process models executing in
        the CPU space and written in Python and following the LoihiProtocol.
-    b. AsyncPyRuntimeService: Coordinates process models executing in 
+    b. AsyncPyRuntimeService: Coordinates process models executing in
        the CPU space and written in Python and following the AsyncProtocol.
 
 2. CRuntimeService: (Abstract Class) Coordinates/Manages process models

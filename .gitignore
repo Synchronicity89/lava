@@ -138,3 +138,11 @@ dmypy.json
 .idea/
 .vscode/
 .history/
+/.vs/lava/config
+/.vs
+/env39/Scripts
+/env39
+/hooks
+/python3_venv
+*.user
+/lava

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f4b016e5-76d8-41cd-a0fe-78e610eef083}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>tutorialsExport\tutorial_end_end_2.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|VisualStudio|KJB39AdminMode</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="build-requirements.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="build.py" />
+    <Compile Include="FeedForwardNet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="setup.py" />
+    <Compile Include="src\lava\magma\compiler\builders\builder.py" />
+    <Compile Include="src\lava\magma\compiler\builders\interfaces.py" />
+    <Compile Include="src\lava\magma\compiler\channels\interfaces.py" />
+    <Compile Include="src\lava\magma\compiler\channels\pypychannel.py" />
+    <Compile Include="src\lava\magma\compiler\compiler.py" />
+    <Compile Include="src\lava\magma\compiler\exceptions.py" />
+    <Compile Include="src\lava\magma\compiler\executable.py" />
+    <Compile Include="src\lava\magma\compiler\exec_var.py" />
+    <Compile Include="src\lava\magma\compiler\node.py" />
+    <Compile Include="src\lava\magma\compiler\utils.py" />
+    <Compile Include="src\lava\magma\core\decorator.py" />
+    <Compile Include="src\lava\magma\core\model\c\model.py" />
+    <Compile Include="src\lava\magma\core\model\c\type.py" />
+    <Compile Include="src\lava\magma\core\model\interfaces.py" />
+    <Compile Include="src\lava\magma\core\model\model.py" />
+    <Compile Include="src\lava\magma\core\model\nc\model.py" />
+    <Compile Include="src\lava\magma\core\model\py\model.py" />
+    <Compile Include="src\lava\magma\core\model\py\ports.py" />
+    <Compile Include="src\lava\magma\core\model\py\type.py" />
+    <Compile Include="src\lava\magma\core\model\sub\model.py" />
+    <Compile Include="src\lava\magma\core\process\interfaces.py" />
+    <Compile Include="src\lava\magma\core\process\message_interface_enum.py" />
+    <Compile Include="src\lava\magma\core\process\ports\exceptions.py" />
+    <Compile Include="src\lava\magma\core\process\ports\ports.py" />
+    <Compile Include="src\lava\magma\core\process\ports\reduce_ops.py" />
+    <Compile Include="src\lava\magma\core\process\process.py" />
+    <Compile Include="src\lava\magma\core\process\variable.py" />
+    <Compile Include="src\lava\magma\core\resources.py" />
+    <Compile Include="src\lava\magma\core\run_conditions.py" />
+    <Compile Include="src\lava\magma\core\run_configs.py" />
+    <Compile Include="src\lava\magma\core\sync\domain.py" />
+    <Compile Include="src\lava\magma\core\sync\protocol.py" />
+    <Compile Include="src\lava\magma\core\sync\protocols\async_protocol.py" />
+    <Compile Include="src\lava\magma\core\sync\protocols\loihi_protocol.py" />
+    <Compile Include="src\lava\magma\runtime\message_infrastructure\factory.py" />
+    <Compile Include="src\lava\magma\runtime\message_infrastructure\message_infrastructure_interface.py" />
+    <Compile Include="src\lava\magma\runtime\message_infrastructure\multiprocessing.py" />
+    <Compile Include="src\lava\magma\runtime\mgmt_token_enums.py" />
+    <Compile Include="src\lava\magma\runtime\node\node.py" />
+    <Compile Include="src\lava\magma\runtime\runtime.py" />
+    <Compile Include="src\lava\magma\runtime\runtime_service.py" />
+    <Compile Include="src\lava\proc\conv\models.py" />
+    <Compile Include="src\lava\proc\conv\process.py" />
+    <Compile Include="src\lava\proc\conv\utils.py" />
+    <Compile Include="src\lava\proc\dense\models.py" />
+    <Compile Include="src\lava\proc\dense\process.py" />
+    <Compile Include="src\lava\proc\io\dataloader.py" />
+    <Compile Include="src\lava\proc\io\reset.py" />
+    <Compile Include="src\lava\proc\io\sink.py" />
+    <Compile Include="src\lava\proc\io\source.py" />
+    <Compile Include="src\lava\proc\io\__init__.py" />
+    <Compile Include="src\lava\proc\lif\models.py" />
+    <Compile Include="src\lava\proc\lif\process.py" />
+    <Compile Include="src\lava\proc\monitor\models.py" />
+    <Compile Include="src\lava\proc\monitor\process.py" />
+    <Compile Include="src\lava\utils\dataloader\mnist.py" />
+    <Compile Include="src\lava\utils\float2fixed.py" />
+    <Compile Include="src\lava\utils\profiler.py" />
+    <Compile Include="src\lava\utils\validator.py" />
+    <Compile Include="src\lava\utils\visualizer.py" />
+    <Compile Include="tests\lava\magma\compiler\builder\test_channel_builder.py" />
+    <Compile Include="tests\lava\magma\compiler\builder\__init__.py" />
+    <Compile Include="tests\lava\magma\compiler\channels\test_pypychannel.py" />
+    <Compile Include="tests\lava\magma\compiler\channels\__init__.py" />
+    <Compile Include="tests\lava\magma\compiler\test_channel_builder.py" />
+    <Compile Include="tests\lava\magma\compiler\test_compiler.py" />
+    <Compile Include="tests\lava\magma\compiler\test_node.py" />
+    <Compile Include="tests\lava\magma\compiler\__init__.py" />
+    <Compile Include="tests\lava\magma\core\model\py\test_ports.py" />
+    <Compile Include="tests\lava\magma\core\model\py\__init__.py" />
+    <Compile Include="tests\lava\magma\core\model\test_decorators.py" />
+    <Compile Include="tests\lava\magma\core\model\test_py_model.py" />
+    <Compile Include="tests\lava\magma\core\model\test_sub_model.py" />
+    <Compile Include="tests\lava\magma\core\model\__init__.py" />
+    <Compile Include="tests\lava\magma\core\process\test_lif_dense_lif.py" />
+    <Compile Include="tests\lava\magma\core\process\test_ports.py" />
+    <Compile Include="tests\lava\magma\core\process\test_process.py" />
+    <Compile Include="tests\lava\magma\core\process\test_variable.py" />
+    <Compile Include="tests\lava\magma\core\process\test_virtual_ports_in_process.py" />
+    <Compile Include="tests\lava\magma\core\process\__init__.py" />
+    <Compile Include="tests\lava\magma\core\__init__.py" />
+    <Compile Include="tests\lava\magma\runtime\test_exception_handling.py" />
+    <Compile Include="tests\lava\magma\runtime\test_get_set_var.py" />
+    <Compile Include="tests\lava\magma\runtime\test_io_ports.py" />
+    <Compile Include="tests\lava\magma\runtime\test_loihi_protocol.py" />
+    <Compile Include="tests\lava\magma\runtime\test_ref_var_ports.py" />
+    <Compile Include="tests\lava\magma\runtime\test_runtime.py" />
+    <Compile Include="tests\lava\magma\runtime\test_runtime_service.py" />
+    <Compile Include="tests\lava\magma\runtime\__init__.py" />
+    <Compile Include="tests\lava\magma\__init__.py" />
+    <Compile Include="tests\lava\proc\conv\test_models.py" />
+    <Compile Include="tests\lava\proc\conv\test_process.py" />
+    <Compile Include="tests\lava\proc\conv\test_utils.py" />
+    <Compile Include="tests\lava\proc\conv\__init__.py" />
+    <Compile Include="tests\lava\proc\dense\test_models.py" />
+    <Compile Include="tests\lava\proc\dense\test_process.py" />
+    <Compile Include="tests\lava\proc\dense\__init__.py" />
+    <Compile Include="tests\lava\proc\io\test_dataloader.py" />
+    <Compile Include="tests\lava\proc\io\test_source_sink.py" />
+    <Compile Include="tests\lava\proc\io\__init__.py" />
+    <Compile Include="tests\lava\proc\lif\test_models.py" />
+    <Compile Include="tests\lava\proc\lif\test_process.py" />
+    <Compile Include="tests\lava\proc\lif\__init__.py" />
+    <Compile Include="tests\lava\proc\monitor\test_monitors.py" />
+    <Compile Include="tests\lava\proc\monitor\__init__.py" />
+    <Compile Include="tests\lava\proc\__init__.py" />
+    <Compile Include="tests\lava\__init__.py" />
+    <Compile Include="tests\__init__.py" />
+    <Compile Include="tutorialsExport\tutorial_end_end_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tutorialsExport\" />
+    <Folder Include="src\" />
+    <Folder Include="src\lava\" />
+    <Folder Include="src\lava\magma\" />
+    <Folder Include="src\lava\magma\compiler" />
+    <Folder Include="src\lava\magma\compiler\builders" />
+    <Folder Include="src\lava\magma\compiler\channels" />
+    <Folder Include="src\lava\magma\core" />
+    <Folder Include="src\lava\magma\core\model" />
+    <Folder Include="src\lava\magma\core\model\c" />
+    <Folder Include="src\lava\magma\core\model\nc" />
+    <Folder Include="src\lava\magma\core\model\py" />
+    <Folder Include="src\lava\magma\core\model\sub" />
+    <Folder Include="src\lava\magma\core\process" />
+    <Folder Include="src\lava\magma\core\process\ports" />
+    <Folder Include="src\lava\magma\core\sync" />
+    <Folder Include="src\lava\magma\core\sync\protocols" />
+    <Folder Include="src\lava\magma\runtime" />
+    <Folder Include="src\lava\magma\runtime\message_infrastructure" />
+    <Folder Include="src\lava\magma\runtime\node" />
+    <Folder Include="src\lava\proc\" />
+    <Folder Include="src\lava\proc\conv" />
+    <Folder Include="src\lava\proc\dense" />
+    <Folder Include="src\lava\proc\io" />
+    <Folder Include="src\lava\proc\lif" />
+    <Folder Include="src\lava\proc\monitor" />
+    <Folder Include="src\lava\utils" />
+    <Folder Include="src\lava\utils\dataloader" />
+    <Folder Include="tests" />
+    <Folder Include="tests\lava" />
+    <Folder Include="tests\lava\magma" />
+    <Folder Include="tests\lava\magma\compiler" />
+    <Folder Include="tests\lava\magma\compiler\builder" />
+    <Folder Include="tests\lava\magma\compiler\channels" />
+    <Folder Include="tests\lava\magma\core" />
+    <Folder Include="tests\lava\magma\core\model" />
+    <Folder Include="tests\lava\magma\core\model\py" />
+    <Folder Include="tests\lava\magma\core\process" />
+    <Folder Include="tests\lava\magma\runtime" />
+    <Folder Include="tests\lava\proc" />
+    <Folder Include="tests\lava\proc\conv" />
+    <Folder Include="tests\lava\proc\dense" />
+    <Folder Include="tests\lava\proc\io" />
+    <Folder Include="tests\lava\proc\lif" />
+    <Folder Include="tests\lava\proc\monitor" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+    <InterpreterReference Include="Global|VisualStudio|KJB" />
+    <InterpreterReference Include="Global|VisualStudio|KJB39AdminMode" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

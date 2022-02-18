@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{f4b016e5-76d8-41cd-a0fe-78e610eef083}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>tutorialsExport\tutorial_end_end_2.py</StartupFile>
+    <StartupFile>tutorialsExport\tutorial_end_end_4.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -137,6 +137,12 @@
     <Compile Include="tests\lava\__init__.py" />
     <Compile Include="tests\__init__.py" />
     <Compile Include="tutorialsExport\tutorial_end_end_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tutorialsExport\tutorial_end_end_3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tutorialsExport\tutorial_end_end_4.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
